@@ -15,6 +15,11 @@
     </parent>
 
     <dependencies>
+        <!-- 引入common包 -->
+        <dependency>
+            <groupId>com.allen.uniapp.server</groupId>
+            <artifactId>common</artifactId>
+        </dependency>
         <!-- 引入spring包 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

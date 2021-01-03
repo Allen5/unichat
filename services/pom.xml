@@ -13,6 +13,7 @@
 		<module>service-chat</module>
 		<module>service-status</module>
 		<module>service-loadbalancer</module>
+		<module>common</module>
 	</modules>
 
 	<parent>
@@ -52,6 +53,11 @@
 		<dependencies>
 
 			<!-- 子模块引入 -->
+			<dependency>
+				<groupId>com.allen.uniapp.server</groupId>
+				<artifactId>common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>com.allen.uniapp.server</groupId>
 				<artifactId>service-chat</artifactId>
