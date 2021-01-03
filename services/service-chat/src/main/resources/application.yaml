@@ -1,0 +1,21 @@
+
+## 配置hikari
+spring:
+  datasource:
+    url: jdbc:mysql://49.235.110.229:3306/mysql?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false
+    username: unichat-dev
+    password: 7OhprOklJIV4Z0Ln
+    default-auto-commit: true
+    auto-commit: true
+    maximum-pool-size: 100
+    max-idle: 10
+    max-wait: 1000
+    min-idle: 5
+    initial-size: 5
+    validation-query: SELECT 1
+    test-on-borrow: false
+    test-while-idea: true
+    # 配置检测时间间隔，关闭空闲连接
+    time-between-eviction-runs-millis: 18800
+    # 配置一个链接在池中最小生存的时间
+    min-evictable-idle-time-millis: 300000

@@ -37,6 +37,17 @@
             <artifactId>netty-all</artifactId>
         </dependency>
 
+        <!-- 引入jdbc starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <!-- 引入mysql connector -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
         <!-- spring test 包 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

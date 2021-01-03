@@ -34,6 +34,8 @@
 		<fastjson.version>1.2.62</fastjson.version>
 		<!-- junit版本号 -->
 		<junit.version>4.11</junit.version>
+		<!-- mysql-connector版本号 -->
+		<mysql.connector.version>8.0.15</mysql.connector.version>
 	</properties>
 
 	<dependencyManagement>
@@ -76,6 +78,13 @@
 				<groupId>com.alibaba</groupId>
 				<artifactId>fastjson</artifactId>
 				<version>${fastjson.version}</version>
+			</dependency>
+
+			<!-- 引入mysql connector -->
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>${mysql.connector.version}</version>
 			</dependency>
 
 			<!-- 引入junit -->
