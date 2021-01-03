@@ -36,6 +36,16 @@
 		<junit.version>4.11</junit.version>
 		<!-- mysql-connector版本号 -->
 		<mysql.connector.version>8.0.15</mysql.connector.version>
+		<!-- 引入mybatis starter -->
+		<mybatis.starter.version>1.3.2</mybatis.starter.version>
+		<!-- 引入mybatis generator -->
+		<mybatis.generator.version>1.3.6</mybatis.generator.version>
+		<!-- 引入tkmybatis -->
+		<tkmybatis.version>4.1.5</tkmybatis.version>
+		<!-- 引入tkmybatis.mapper -->
+		<tkmybatis.mapper.version>2.1.5</tkmybatis.mapper.version>
+		<!-- 引入tkmybatis genereator -->
+		<tkmybatis.generator.version>1.1.5</tkmybatis.generator.version>
 	</properties>
 
 	<dependencyManagement>
@@ -86,6 +96,35 @@
 				<artifactId>mysql-connector-java</artifactId>
 				<version>${mysql.connector.version}</version>
 			</dependency>
+
+			<!-- 引入mybatis.starter -->
+			<dependency>
+				<groupId>org.mybatis.spring.boot</groupId>
+				<artifactId>mybatis-spring-boot-starter</artifactId>
+				<version>${mybatis.starter.version}</version>
+			</dependency>
+
+			<!-- 引入mybatis.generator -->
+			<dependency>
+				<groupId>org.mybatis.generator</groupId>
+				<artifactId>mybatis-generator-core</artifactId>
+				<version>${mybatis.generator.version}</version>
+			</dependency>
+
+			<!-- 引入tkmybatis -->
+			<dependency>
+				<groupId>tk.mybatis</groupId>
+				<artifactId>mapper</artifactId>
+				<version>${tkmybatis.version}</version>
+			</dependency>
+
+			<!-- 引入tkmybatis.mapper -->
+			<dependency>
+				<groupId>tk.mybatis</groupId>
+				<artifactId>mapper-spring-boot-starter</artifactId>
+				<version>${tkmybatis.mapper.version}</version>
+			</dependency>
+
 
 			<!-- 引入junit -->
 			<dependency>
